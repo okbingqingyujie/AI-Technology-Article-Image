@@ -1,0 +1,8 @@
+interface:
+  display_name: "AI Technology Article Image"
+  short_description: "为 AI 科技公众号文章生成统一、克制且有编辑感的系列配图"
+  brand_color: "#244A8D"
+  default_prompt: "Use $ai-technology-article-image to plan and generate a consistent set of editorial illustrations for my technology article."
+
+policy:
+  allow_implicit_invocation: true
