@@ -6,7 +6,7 @@ AI Technology Article Image 是一个面向 AI、科技与产品类内容创作�
 
 适合公众号作者、AI 产品经理、科技内容编辑，以及希望保持账号视觉风格的个人创作者。
 
-[快速开始](#快速开始) · [功能与作用](#功能与作用) · [截图展示](#截图展示) · [使用示例](#使用示例) · [完整 Skill](SKILL.md)
+[配图效果](#配图效果) · [快速开始](#快速开始) · [功能与作用](#功能与作用) · [使用示例](#使用示例) · [完整 Skill](SKILL.md)
 
 ## 为什么做这个 Skill
 
@@ -36,7 +36,29 @@ AI Technology Article Image 是一个面向 AI、科技与产品类内容创作�
 
 同一组图共享视觉规则，但会改变主体位置、信息流方向和构图方式。你也可以提供喜欢的参考图，让 Skill 根据可观察的风格特征调整方案。
 
-## 截图展示
+## 配图效果
+
+下面是同一篇 WorkBuddy 公众号文章的八张实际章节配图，按正文顺序展示。它们使用同一套低饱和蓝色、细线和轻微纸张纹理，但依据各节的内容关系改变构图。示例是文章编辑插画，不是 WorkBuddy 官方视觉素材，也不是产品界面的精确截图。
+
+| 01 · 一条消息启动电脑任务 | 02 · 降低 Agent 上手门槛 |
+| --- | --- |
+| ![手机消息触发电脑整理文件并生成报告](docs/images/examples/01-message-to-task.png) | ![手机扫码连接电脑，简化 Agent 配置](docs/images/examples/02-easy-setup.png) |
+
+| 03 · 手机发指令，电脑执行 | 04 · 长任务拆解与交付 |
+| --- | --- |
+| ![手机指令连接电脑中的本地文件和工具](docs/images/examples/03-local-execution.png) | ![多个任务模块分工并汇总成报告](docs/images/examples/04-agent-collaboration.png) |
+
+| 05 · 离开工位后继续运行 | 06 · 高风险操作保留确认 |
+| --- | --- |
+| ![用户外出时电脑继续执行预设工作](docs/images/examples/05-remote-work.png) | ![用户在删除动作前拦截并确认权限](docs/images/examples/06-permission-boundary.png) |
+
+| 07 · 跨设备接续同一任务 | 08 · 工具汇入任务入口 |
+| --- | --- |
+| ![同一任务从手机延续到桌面端完善](docs/images/examples/07-cross-device.png) | ![聊天、文档和工具连接到统一任务中心](docs/images/examples/08-task-entry.png) |
+
+每张图都可以点击查看原始尺寸。实际使用时，请提供自己的文章和参考图；Skill 会按你文章的观点重新规划，不会直接复用这八张图中的人物、设备或场景。
+
+## Skill 页面截图
 
 ![Skill 文档页面截图](docs/images/skill-page.jpg)
 
@@ -158,7 +180,8 @@ AI-Technology-Article-Image/
 │   └── openai.yaml                   # 显示名称与默认调用提示
 └── docs/
     └── images/
-        └── skill-page.jpg           # 文档页面截图
+        ├── skill-page.jpg           # 文档页面截图
+        └── examples/                # 8 张章节配图效果样例
 ```
 
 `SKILL.md` 与具名 Markdown 文件包含相同的 Skill 内容。安装时需要保留 `SKILL.md` 这个入口文件名；调用名称为 `ai-technology-article-image`。后续修改指令时，应同步更新阅读副本。
